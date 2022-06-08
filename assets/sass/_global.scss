@@ -1,0 +1,45 @@
+// sass ./assets/sass/index.scss ./assets/css/index.css --watch
+
+@import "_variable";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.container {
+   margin-top: 44px;
+   margin-right: 44px;
+   margin-left: 44px;
+}
+
+.delighted {
+   background-image: url("../images/the-interior-has-a-armchair-on-empty-white-wall-background-3d-rendering\ 1.png");
+   background-position: bottom center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: auto;
+   height: 100vh;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   // object-fit: cover;
+}
+
+body {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+}
+
+.form-message {
+   margin-top: 5px;
+   color: red;
+}
+
+.invalid {
+   background: rgb(214, 154, 154);
+   border: 1px solid red !important;
+   border-radius: 9px;
+   margin-top: 13px;
+   margin-bottom: 10px;
+   padding-left: 25px;
+   outline: none;
+}

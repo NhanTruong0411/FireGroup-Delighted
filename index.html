@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Delighted</title>
+   <link rel="stylesheet" href="./assets/css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <section class="delighted">
+      <div class="logo">
+         <a href="#">
+            <img src="./assets/images/Vector.png" alt="Logo Delighted">
+         </a>
+      </div>
+      <form class="form" id="myForm">
+         <div class="container">
+            <!-- INTRO -->
+            <div class="form__intro">
+               <div class="form__intro-greeting">
+                  <h2>Welcome to <a href="#"><span>Delighted</span></a></h2>
+               </div>
+               <div class="form__intro-signup">
+                  <a href="#">
+                     <p>No Account ? <br><span>Sign up</span></p>
+                  </a>
+               </div>
+            </div>
+
+            <!-- HEADER -->
+            <h1 class="form__header">Sign in</h1>
+
+            <!-- SOCIAL -->
+            <div class="form__social">
+               <div class="form__social-google">
+                  <img class="form__social-google-icon" src="./assets/images/google.svg" alt="Google social media">
+                  <small class="form__social-google-text">Sign in with Google</small>
+               </div>
+               <div class="form__social-facebook">
+                  <img  class="form__social-facebook-icon" src="./assets/images/Facebook.svg" alt="Facebook social media">
+               </div>
+               <div class="form__social-apple">
+                  <img class="form__social-apple-icon" src="./assets/images/apple.svg" alt="Apple social media">
+               </div>
+            </div>
+
+            <!-- USERNAME INPUT -->
+            <div class="form__input-username">
+               <label for="fullname">Enter your fullname or email address</label>
+               <input type="text" id="fullname" placeholder="Username or email address" required />
+               <span class="form-message"></span>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="form__input-password">
+               <label for="password">Enter your Password</label>
+               <input type="password" id="password" placeholder="Password" required />
+               <span class="form-message"></span>
+            </div>
+
+            <!-- FORGOT PASSWORD -->
+            <div class="form__forgot">
+               <div class="show">
+                  <input id="show-checkbox" type="checkbox" onclick="showPassword()"> <label for="show-checkbox" class="checkbox-text">Show Password</label>
+               </div>
+               <a href="#"><small>Forgot Password</sma></a>
+            </div>
+
+            <!-- SIGN IN BUTTON -->
+            <div class="form__signin-btn">
+               <input type="submit" class="button" value="Sign in">
+            </div>
+
+         </div>
+      </form>
+   </section>
+
+   <script src="./assets/js/showpassword.js"></script>
+   <script src="./assets/js/validator.js"></script>
+   <script>
+      Validator({
+         form: '#myForm',
+         rules: [
+            Validator.isRequired('#fullname'),
+            Validator.isRequired('#password'),
+            
+         ]
+      });
+   </script>
+</body>
+</html>

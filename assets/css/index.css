@@ -1,0 +1,620 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 44px;
+  margin-right: 44px;
+  margin-left: 44px;
+}
+
+.delighted {
+  background-image: url("../images/the-interior-has-a-armchair-on-empty-white-wall-background-3d-rendering 1.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form-message {
+  margin-top: 5px;
+  color: red;
+}
+
+.invalid {
+  background: rgb(214, 154, 154);
+  border: 1px solid red !important;
+  border-radius: 9px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  outline: none;
+}
+
+.logo {
+  display: inline;
+  margin-bottom: 5px;
+}
+.logo img {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.form {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 539px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 40px;
+  margin-right: 118px;
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .form {
+    margin: 0 auto;
+  }
+}
+.form__intro {
+  display: flex;
+}
+.form__intro-greeting {
+  flex-basis: 70%;
+}
+.form__intro-greeting h2 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  color: #000000;
+}
+.form__intro-greeting h2 span {
+  color: #779341;
+}
+.form__intro-signup {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.form__intro-signup p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #8D8D8D;
+}
+.form__intro-signup p span {
+  color: #779341;
+}
+.form__header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 82px;
+  color: #000000;
+  margin-bottom: 43px;
+}
+.form__social {
+  width: 451px;
+  height: 57px;
+  display: flex;
+  gap: 13px;
+  margin-bottom: 51px;
+}
+.form__social-google {
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 9px;
+  flex-basis: 66%;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  transition: 0.5s all ease;
+}
+.form__social-google:hover {
+  box-shadow: 0px 4px 10px #000000;
+  background: #E9F1FF;
+}
+.form__social-google-icon {
+  margin-left: 32px;
+}
+.form__social-google-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4285F4;
+}
+.form__social-facebook {
+  cursor: pointer;
+  gap: 17%;
+  background: #FFFFFF;
+  border-radius: 9px;
+  transition: 0.5s all ease;
+}
+.form__social-facebook:hover {
+  box-shadow: 0px 4px 10px #000000;
+  background: #E9F1FF;
+}
+.form__social-facebook-icon {
+  margin: 15.75px 17.75px;
+}
+.form__social-apple {
+  cursor: pointer;
+  gap: 17%;
+  background: #FFFFFF;
+  border-radius: 9px;
+  transition: 0.5s box-shadow ease, 0.5s background ease;
+}
+.form__social-apple:hover {
+  box-shadow: 0px 4px 10px #000000;
+  background: #E9F1FF;
+}
+.form__social-apple-icon {
+  margin: 15.75px 17.75px;
+}
+.form__input-username, .form__input-password {
+  margin-bottom: 20px;
+}
+.form__input-username label, .form__input-password label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.form__input-username input[type=text], .form__input-password input[type=text] {
+  width: 451px;
+  height: 57px;
+  background: #FFFFFF;
+  border: 1px solid #ADADAD;
+  border-radius: 9px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  outline: none;
+}
+.form__input-username input[type=text]:focus, .form__input-password input[type=text]:focus {
+  border: 1px solid #4285F4;
+}
+.form__input-username input[type=password], .form__input-password input[type=password] {
+  width: 451px;
+  height: 57px;
+  background: #FFFFFF;
+  border: 1px solid #ADADAD;
+  border-radius: 9px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  outline: none;
+}
+.form__input-username input[type=password]:focus, .form__input-password input[type=password]:focus {
+  border: 1px solid #4285F4;
+}
+.form__input-username ::placeholder, .form__input-password ::placeholder {
+  margin-top: 19px;
+  margin-bottom: 19px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+}
+.form__input-username i, .form__input-password i {
+  position: absolute;
+  top: 19px;
+}
+.form__forgot {
+  margin-bottom: 36px;
+  display: flex;
+}
+.form__forgot .show {
+  flex-basis: 50%;
+}
+.form__forgot .show input[type=checkbox] {
+  flex-basis: 50%;
+  margin-top: 15px;
+}
+.form__forgot .show .checkbox-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.form__forgot a {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.form__forgot a small {
+  font-size: 13px;
+  line-height: 20px;
+  color: #4285F4;
+  text-align: end;
+}
+.form__signin-btn {
+  text-align: end;
+}
+.form__signin-btn input {
+  background: #779341;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 91px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.5s box-shadow ease;
+  margin-bottom: 79px;
+}
+.form__signin-btn input:hover {
+  box-shadow: 0px 4px 19px #779341;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    margin: 0 26px;
+    align-self: center;
+    width: 326px;
+    height: 741px;
+  }
+  .form .container {
+    margin-top: 44px;
+    margin-right: 26px;
+    margin-left: 26px;
+  }
+  .form__intro {
+    display: flex;
+  }
+  .form__intro-greeting {
+    flex-basis: 50%;
+  }
+  .form__intro-greeting h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .form__intro-greeting h2 span {
+    color: #779341;
+  }
+  .form__intro-signup {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .form__intro-signup p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #8D8D8D;
+  }
+  .form__intro-signup p span {
+    color: #779341;
+  }
+  .form__header {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    margin-bottom: 37px;
+    margin-top: 14px;
+  }
+  .form__social {
+    width: 178px;
+    height: 56px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 51px;
+  }
+  .form__social-google {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding-left: 24px;
+    width: 178px;
+    height: 56px;
+    background: #ffffff;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .form__social-google-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 0;
+  }
+  .form__social-google-text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #4285F4;
+  }
+  .form__social-facebook {
+    cursor: pointer;
+    width: 36px;
+    height: 56px;
+    gap: 17%;
+    background: #FFFFFF;
+    border-radius: 9px;
+  }
+  .form__social-facebook-icon {
+    margin: 19px 9px;
+    width: 18px;
+    height: 18px;
+  }
+  .form__social-apple {
+    cursor: pointer;
+    gap: 17%;
+    background: #FFFFFF;
+    border-radius: 9px;
+  }
+  .form__social-apple-icon {
+    width: 18px;
+    height: 18px;
+    margin: 20.13px 10.13px;
+  }
+  .form__input-username {
+    margin-bottom: 38px;
+  }
+  .form__input-username label, .form__input-password label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  .form__input-username input[type=text], .form__input-password input[type=text] {
+    width: 274px;
+    height: 57px;
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 9px;
+    margin-top: 13px;
+    padding-left: 15.19px;
+    outline: none;
+  }
+  .form__input-username input[type=text]:focus, .form__input-password input[type=text]:focus {
+    border: 1px solid #4285F4;
+  }
+  .form__input-username input[type=password], .form__input-password input[type=password] {
+    width: 274px;
+    height: 57px;
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 9px;
+    margin-top: 13px;
+    padding-left: 15.19px;
+    outline: none;
+  }
+  .form__input-username input[type=password]:focus, .form__input-password input[type=password]:focus {
+    border: 1px solid #4285F4;
+  }
+  .form__input-username ::placeholder, .form__input-password ::placeholder {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: #808080;
+  }
+  .form__forgot {
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+  .form__forgot .show {
+    flex-basis: 50%;
+  }
+  .form__forgot .show input[type=checkbox] {
+    margin-top: 15px;
+  }
+  .form__forgot .show .checkbox-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  .form__forgot a {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .form__forgot a small {
+    font-size: 13px;
+    line-height: 20px;
+    color: #4285F4;
+    text-align: end;
+  }
+  .form__signin-btn {
+    text-align: end;
+  }
+  .form__signin-btn input {
+    background: #779341;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s box-shadow linear;
+  }
+  .form__signin-btn input:hover {
+    box-shadow: 0px 4px 19px #779341;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
